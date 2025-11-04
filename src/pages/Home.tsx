@@ -20,6 +20,29 @@ const Home = () => {
           <p className="text-muted-foreground">Here's what QIC prepared for you today.</p>
         </div>
 
+        {/* Discovery Card - Feature 1 */}
+        <div className="mb-6 animate-fade-in">
+          <div
+            className="p-6 bg-card rounded-lg cursor-pointer hover:shadow-lg transition-all border-0"
+            onClick={() => navigate("/route-discovery")}
+            style={{ boxShadow: "var(--shadow-soft)" }}
+          >
+            <div className="flex items-center gap-4">
+              <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl">🚗💫</span>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-bold text-card-foreground mb-1">
+                  Discover what's along your route today
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  Find new spots along your daily route — tap to personalize.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8">
           <StatsCard
             title="Life Events Assistant"

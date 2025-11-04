@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import LifeEvents from "./pages/LifeEvents";
 import CarHealth from "./pages/CarHealth";
 import Itinerary from "./pages/Itinerary";
+import RouteDiscovery from "./pages/RouteDiscovery";
 import NotFound from "./pages/NotFound";
 import AppHeader from "./components/AppHeader";
 import BottomNav from "./components/BottomNav";
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/life-events" element={<LifeEvents />} />
             <Route path="/car-health" element={<CarHealth />} />
             <Route path="/itinerary" element={<Itinerary />} />
+            <Route path="/route-discovery" element={<RouteDiscovery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <BottomNav />
